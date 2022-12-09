@@ -118,31 +118,31 @@ const database = {
         { id: 14, walkerId: 10, cityId: 2 },
     ],
     cities: [
-        { id: 1, name: "Pittsburgh"},
-        { id: 2, name: "Minneapolis"},
-        { id: 3, name: "Phoenix"},
-        { id: 4, name: "Tucson"},
-        { id: 5, name: "Denver"},
-        { id: 6, name: "Boise"},
-        { id: 7, name: "San Diego"},
-        { id: 8, name: "Sarasota"},
-        { id: 9, name: "White Plains"},
-        { id: 10, name: "Chicago"}
+        { id: 1, name: "Pittsburgh" },
+        { id: 2, name: "Minneapolis" },
+        { id: 3, name: "Phoenix" },
+        { id: 4, name: "Tucson" },
+        { id: 5, name: "Denver" },
+        { id: 6, name: "Boise" },
+        { id: 7, name: "San Diego" },
+        { id: 8, name: "Sarasota" },
+        { id: 9, name: "White Plains" },
+        { id: 10, name: "Chicago" }
     ],
 }
 
 export const getWalkers = () => {
-    return database.walkers.map(walker => ({...walker}))
+    return database.walkers.map(walker => ({ ...walker }))
 }
 
 export const getPets = () => {
-    return database.pets.map(pet => ({...pet}))
+    return database.pets.map(pet => ({ ...pet }))
 }
 
 export const getCities = () => {
-    return database.cities.map(city => ({...city}))
+    return database.cities.map(city => ({ ...city }))
 }
 
 export const getWalkerCities = () => {
-    return database.walkerCities.map(walkerCity => ({...walkerCity}))
+    return database.walkerCities.map(walkerCity => ({ ...walkerCity }))
 }

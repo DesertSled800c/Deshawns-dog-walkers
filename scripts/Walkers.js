@@ -66,7 +66,7 @@ document.addEventListener(
 )
 
 const walkers = getWalkers()
-const walkcities = getWalkerCities()
+const walkercities = getWalkerCities()
 const cities = getCities()
 
 export const Walkers = () => {
@@ -83,26 +83,26 @@ export const Walkers = () => {
 }
 
 const filterWalkerCitiesByWalkers = (walker) => {
-    let roamers = []
-    for (const roam of walkcities) {
+    let theWalkerArr = []
+    for (const roam of walkercities) {
         if (roam.walkerId === walker.id) {
-            roamers.push(roam)
+            theWalkerArr.push(roam)
         }
     }
-    return roamers
+    return theWalkerArr
 }
 
 
 const assignedCityNames = (theWalkerArr) => {
-    let cityNames = ""
+    let cityNamesString = ""
     for (const bigCity of theWalkerArr) {
         for (const city of cities) {
             if (city.id === bigCity.cityId) {
-                cityNames = `${cityNames} ${city.name}`
+                cityNamesString = `${cityNamesString} ${city.name}`
             }
         }
     }
-    return cityNames
+    return cityNamesString
 }
 
 
